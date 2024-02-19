@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Site</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">TP bootstrap</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="https://t3.ftcdn.net/jpg/05/48/01/34/360_F_548013491_EiwrN19CNRFnhEGEPckd7SKoxrMfkwPD.jpg"
+                            class="card-img-top" alt="Photo de l'étudiant">
+                        <div class="container mt-5">
+                            <ul class="nav nav-tabs">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#experience"
+                                        data-toggle="tab">Expériences</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#education" data-toggle="tab">Éducation</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#competences" data-toggle="tab">Compétences</a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade show active" id="experience">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Massimo Martelossi</h5>
+                                        <p class="card-text">
+                                            Expériences:
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Stage chez Réal Madrid football Club en
+                                                développement web</li>
+                                            <li class="list-group-item">Projet de développement d'une application mobile
+                                            </li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="education">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Massimo Martelossi</h5>
+                                        <p class="card-text">
+                                            Éducation:
+                                        <ul class="list-group">
+                                            <li class="list-group-item">Baccalauréat en Informatique</li>
+                                            <li class="list-group-item">Actuellement en dernière année de Master en
+                                                Informatique</li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="competences">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Massimo Martelossi</h5>
+                                        <p class="card-text">
+                                            Compétences:
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="Java">
+                                                    Java
+                                                </button></li>
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="Python">
+                                                    Python
+                                                </button></li>
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="HTML">
+                                                    HTML
+                                                </button></li>
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="CSS">
+                                                    CSS
+                                                </button></li>
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="JavaScript">
+                                                    JavaScript
+                                                </button></li>
+                                        </ul>
+                                        Frameworks:
+                                        <ul class="list-group">
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="React">
+                                                    React
+                                                </button></li>
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="Angular">
+                                                    Angular
+                                                </button></li>
+                                        </ul>
+                                        <ul class="list-group">
+                                            Bases de données:
+
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="MySQL">
+                                                    MySQL
+                                                </button></li>
+                                            <li class="list-group-item"><button type="button" class="btn btn-secondary"
+                                                    data-toggle="tooltip" data-placement="top" title="MongoDB">
+                                                    MongoDB
+                                                </button></li>
+                                        </ul>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        </p>
+                        <button type="button" class="btn btn-primary" data-toggle="modal"
+                            data-target="#modalLettreMotivation">
+                            Voir la lettre de motivation
+                        </button>
+                        <br>
+                    </div>
+                    <div id="carouselProjects" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselProjects" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselProjects" data-slide-to="1"></li>
+                            <!-- Ajoutez plus d'indicateurs si nécessaire -->
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="https://media.licdn.com/dms/image/D4E12AQFZr8rSpH5v0Q/article-cover_image-shrink_600_2000/0/1686340335251?e=2147483647&v=beta&t=UIvMl-47xIxOlDsqlt85HHLjR-p6bqL4zYMDDNeGzZQ"
+                                    class="d-block w-100" alt="Projet 1">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>JavaFx</h5>
+                                    <p>Développement d'un Logiciel de Gestion de
+                                        Frais Comptables avec JavaFX</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="https://kruschecompany.com/wp-content/uploads/2022/01/Kotlin.png"
+                                    class="d-block w-100" alt="Projet 2">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Kotlin</h5>
+                                    <p>Développement d'une Application Mobile E-
+                                        commerce avec Kotlin</p>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselProjects" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Précédent</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselProjects" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Suivant</span>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        </div>
+    </main>
+
+
+    <div class="modal fade" id="modalLettreMotivation" tabindex="-1" role="dialog"
+        aria-labelledby="modalLettreMotivationLabel1" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalLettreMotivationLabel1">Lettre de Motivation -Massimo Martelossi
+                    </h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p>Objet: Candidature pour un poste dans le domaine de l'informatique</p>
+                    <ul>
+                        <li>Madame, Monsieur,</li>
+                        <li>Je suis vivement intéressé par les opportunités de carrière au sein de votre entreprise dans
+                            le domaine de l'informatique. Ayant suivi de près l'évolution de ce secteur passionnant, je
+                            suis motivé par l'idée de contribuer à des projets innovants et stimulants.</li>
+                        <li>Au cours de mes études et de mes expériences professionnelles, j'ai développé une solide
+                            expertise dans plusieurs domaines de l'informatique, notamment:</li>
+                        <ul>
+                            <li>Développement web et mobile</li>
+                            <li>Bases de données et gestion de l'information</li>
+                            <li>Systèmes d'exploitation et réseaux informatiques</li>
+                        </ul>
+                        <li>Je suis particulièrement enthousiaste à l'idée de mettre en pratique mes compétences pour
+                            résoudre des problèmes complexes et contribuer à l'essor de votre entreprise.</li>
+                        <li>Je vous remercie de l'attention que vous porterez à ma candidature et je me tiens à votre
+                            disposition pour toute information complémentaire.</li>
+                        <li>Cordialement,</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <style>
+        img {
+            width: 150px !important;
+            height: 90px;
+        }
+    </style>
+</body>
+
+</html>
